@@ -1,0 +1,31 @@
+{
+    "port": 2211,
+    "url": "/api/",
+    "activeDirectory": {
+        "instanceConfig": {
+            "url": "*",
+            "baseDN": "*"
+        },
+        "allowedGroup": "*",
+        "userPostfix": "*"
+    },
+    "cors": {
+        "enabled": true,
+        "credentials": true,
+        "origin": "*"
+    },
+    "db": {
+        "host": "*",
+        "port": 5432,
+        "database": "*",
+        "user": "*",
+        "password": "*",
+
+        "max": 10,
+        "idleTimeoutMillis": 30000
+    },
+    "jwt": {
+        "secret": "*",
+        "publicPath": "^\/api/public"
+    }
+}
